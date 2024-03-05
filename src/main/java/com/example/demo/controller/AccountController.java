@@ -28,4 +28,9 @@ public class AccountController {
 	public List<Account> getAccounts(){
 		return accountService.getAccounts();
 	}
-}
+
+	@GetMapping("/msg")
+	public String getMsg(){
+		return "Working?";
+	}
+	}
